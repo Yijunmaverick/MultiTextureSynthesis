@@ -9,6 +9,16 @@ Torch implementation of our CVPR17 [paper](https://arxiv.org/abs/1703.01664) on 
 
 ## Task 1: Diverse synthesis
 
+We first realize the diverse synthesis on single-texture synthesis. Given one texture example, the generator should be powerful enough to combine elements in various way.
+
+# Training
+
+'''
+th sin.lua
+'''
+
+# Testing
+
 ## Task 2: Multi-texture synthesis
 
 ## Task 3: Multi-style transfer
