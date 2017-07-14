@@ -27,7 +27,7 @@ After obtaining all diverse results, run gif.m (data/test_out/) in Matlab to con
 
 ## Task 2: Multi-texture synthesis
 
-### Training
+- Training
 
 Collect your texture image set (e.g., data/texture60/) before the training.
 
@@ -35,7 +35,7 @@ Collect your texture image set (e.g., data/texture60/) before the training.
 th multi_texture_synthesis_train.lua
 ```
 
-### Testing
+- Testing
 
 We release a 60-texture synthesis [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeS0FncWpzTUNoblk) that synthesize the provided 60-texture set (ind_texture =1,2,...,60) in data/texture60/ folder.
 
@@ -54,13 +54,13 @@ Collect your style image set (e.g., data/style1000/) before the training. For la
 th convertHDF5.lua -images_path YourImageSetPath -save_to XXX.hdf5 -resize_to 512
 ```
 
-### Training
+- Training
 
 ```
 th multi_style_transfer_train.lua -image_size 512
 ```
 
-### Testing
+- Testing
 
 We release a 1000-style transfer [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeZnRESGg5Z0RpVzQ) that transfer this 1000-style [set](https://drive.google.com/open?id=0B8_MZ8a8aoSeajRLcEtIUjBjR3c) (ind_texture =1,2,...,1000).
 
