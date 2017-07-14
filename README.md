@@ -18,7 +18,7 @@ We first realize the diverse synthesis on single-texture. Given one texture exam
 th single_texture_diverse_synthesis_train.lua -texture YourTextureExample.jpg -image_size 256 -diversity_weight -1.0
 ```
 
-# Testing
+### Testing
 
 ```
 th single_texture_diverse_synthesis_test.lua 
