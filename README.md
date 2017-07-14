@@ -1,14 +1,11 @@
 # [MultiTextureSynthesis](https://sites.google.com/site/yijunlimaverick/texturesynthesis)
 Torch implementation of our CVPR17 [paper](https://arxiv.org/abs/1703.01664) on multi-texture synthesis. For academic use only.
 
-## Setup
+## Prerequisites
 
-- We use the [caffe-for-cudnn-v2.5.48](https://github.com/RadekSimkanic/caffe-for-cudnn-v2.5.48). Please refer [Caffe](http://caffe.berkeleyvision.org/installation.html) for more installation details.
-- Basically, you need to first modify the [MATLAB_DIR](https://github.com/BVLC/caffe/issues/4510) in Makefile.config and then run the following commands for a successful compilation:
-```
-make all -j4
-make matcaffe
-```
+- Linux
+- NVIDIA GPU + CUDA CuDNN
+- Torch 
 
 ## Training
 - Follow the [DCGAN](https://github.com/soumith/dcgan.torch) to prepare the data (CelebA). The only differece is that the face we cropped is of size 128x128. Please modify Line 10 in their [crop_celebA.lua](https://github.com/soumith/dcgan.torch/blob/master/data/crop_celebA.lua) file. We use the standard train&test split of the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
