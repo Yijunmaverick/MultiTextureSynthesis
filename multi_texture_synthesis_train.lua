@@ -218,7 +218,6 @@ for it = 1, params.num_iterations do
     end
   end
 
-  -- Dump net, the file is huge
   if it%1000 == 0 then 
     torch.save(params.tmp_path .. 'model_' .. it ..'.t7', net:clearState())
   end
