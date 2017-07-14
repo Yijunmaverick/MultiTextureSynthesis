@@ -5,7 +5,6 @@ require 'image'
 require 'hdf5'
 require 'xlua'
 require 'src/utils'
-require 'loadcaffe'
 
 ---------------------------------------------------------
 -- Define params
@@ -16,7 +15,6 @@ cmd:option('-images_path', 'data/contents/JPEGImages')
 cmd:option('-save_to', 'data/512_10K_content_image.hdf5')
 cmd:option('-resize_to', 512)
 
-cmd:option('-vgg_no_pad', false , 'Whether to use padding in convolutions in descriptor net.')
 cmd:option('-gpu', 0)
 cmd:option('-backend', 'nn', 'nn|cudnn')
 
