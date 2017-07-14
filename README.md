@@ -11,7 +11,7 @@ Torch implementation of our CVPR17 [paper](https://arxiv.org/abs/1703.01664) on 
 
 We first realize the diverse synthesis on single-texture synthesis. Given one texture example, the generator should be powerful enough to combine elements in various way.
 
-# Training
+### Training
 
 ```
 th single_texture_diverse_synthesis_train.lua -texture YourTextureExample.jpg -image_size 256 -diversity_weight -1.0
