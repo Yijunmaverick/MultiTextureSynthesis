@@ -74,20 +74,7 @@ local net = torch.load(params.pretrain_model):cuda()
 --net:evaluate()
 
   local content_image_list = params.content:split(',')
-  --load original content
-
-  --[[local content_image_original_unprocess = {}
-
-  for _, img_path in ipairs(content_image_list) do
-    local img = image.load('data/fox_high_res_content/' .. img_path .. '.png', 3)   
-     
-    --img = image.scale(img, params.style_scale*params.image_size, params.style_scale*params.image_size, 'bilinear')
-
-    table.insert(content_image_original_unprocess, img)
-  end]]--
-
-
-
+  
   -- load input content
  
   local content_image = {}
@@ -107,14 +94,6 @@ local net = torch.load(params.pretrain_model):cuda()
     img = preprocess(img):cuda():add_dummy()
     table.insert(content_image, img)
   end
-
-
---local input_noise = torch.zeros(params.image_size/4, params.image_size/4):uniform():cuda()
-
-
--- File to save to
---local out_file = hdf5.open(params.save_to, 'w')
-
 
 for j=1,#content_image do
 print('j = ', j)
