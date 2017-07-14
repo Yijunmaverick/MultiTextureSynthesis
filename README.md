@@ -49,7 +49,11 @@ We incorporate our idea of introducing a selection unit to handle the transferri
 the selection unit, we generate a corresponding noise map (e.g., from the uniform distribution) and concatenate these
 maps with the encoded features from the content, which are then decoded to the transferred result.
 
-Collect your style image set (e.g., data/style1000/) before the training. For large number of style images (e.g., 1000), it is suggested to use the convertHDF5.lua
+Collect your style image set (e.g., data/style1000/) before the training. For large number of style images (e.g., 1000), it is suggested to convert all images (e.g., ,jpg) to a HDF5 file for fast reading.
+
+```
+th convertHDF5.lua -images_path YourImageSetPath -save_to XXX.hdf5 -resize_to 512
+```
 
 ### Training
 
