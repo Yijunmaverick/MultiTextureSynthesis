@@ -45,9 +45,7 @@ th multi_texture_synthesis_test.lua -ind_texture 24
 
 ## Task 3: Multi-style transfer
 
-We incorporate our idea of introducing a selection unit to handle the transferring of different styles. For each bit in
-the selection unit, we generate a corresponding noise map (e.g., from the uniform distribution) and concatenate these
-maps with the encoded features from the content, which are then decoded to the transferred result.
+In the synthesis, each bit in the selection unit represents a texture example. In the transferring, we employ a set of selection maps where each map represents one style image when initalized (e.g., from the uniform distribution).
 
 Collect your style image set (e.g., data/style1000/) before the training. For large number of style images (e.g., 1000), it is suggested to convert all images (e.g., ,jpg) to a HDF5 file for fast reading.
 
