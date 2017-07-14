@@ -6,6 +6,7 @@ Torch implementation of our CVPR17 [paper](https://arxiv.org/abs/1703.01664) on 
 - Linux
 - NVIDIA GPU + CUDA CuDNN
 - Torch 
+- [VGG](https://drive.google.com/open?id=0B8_MZ8a8aoSeSG84N3pqcGpYT3M) pretrained network 
 
 ## Task 1: Diverse synthesis
 
