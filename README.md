@@ -37,4 +37,4 @@ make matcaffe
 
 ## Acknowledgement
 - This work was performed during a summer internship at [Adobe Research](https://research.adobe.com/).
-- Codes are heavily borrowed from popular implementations of several great work, including [NeuralArt](https://github.com/jcjohnson/neural-style), [TextureNet](https://github.com/DmitryUlyanov/texture_nets), [Perceptual](https://github.com/jcjohnson/fast-neural-style).
+- Codes are heavily borrowed from popular implementations of several great work, including [NeuralArt](https://github.com/jcjohnson/neural-style), [TextureNet](https://github.com/DmitryUlyanov/texture_nets), [FastNeuralArt](https://github.com/jcjohnson/fast-neural-style).
