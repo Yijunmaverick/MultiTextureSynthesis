@@ -37,7 +37,7 @@ th multi_texture_synthesis_train.lua
 
 - Testing
 
-We release a 60-texture synthesis [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeS0FncWpzTUNoblk) that synthesize the provided 60-texture set (ind_texture =1,2,...,60) in data/texture60/ folder.
+We release a 60-texture synthesis [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeS0FncWpzTUNoblk) that synthesizes the provided 60-texture set (ind_texture =1,2,...,60) in data/texture60/ folder.
 
 ```
 th multi_texture_synthesis_test.lua -ind_texture 24
@@ -62,7 +62,7 @@ th multi_style_transfer_train.lua -image_size 512
 
 - Testing
 
-We release a 1000-style transfer [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeZnRESGg5Z0RpVzQ) that transfer this 1000-style [set](https://drive.google.com/open?id=0B8_MZ8a8aoSeajRLcEtIUjBjR3c) (ind_texture =1,2,...,1000).
+We release a 1000-style transfer [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeZnRESGg5Z0RpVzQ) that transfers this 1000-style [set](https://drive.google.com/open?id=0B8_MZ8a8aoSeajRLcEtIUjBjR3c) (ind_texture =1,2,...,1000).
 
 ```
 th multi_style_transfer_test.lua 
