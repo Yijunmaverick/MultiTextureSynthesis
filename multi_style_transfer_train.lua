@@ -260,5 +260,3 @@ for it = 1, params.num_iterations do
       utils.write_json(filename, checkpoint)
   end
 end
--- Clean net and dump it, ~ 500 kB
---torch.save(params.tmp_path .. 'model.t7', net:clearState())
