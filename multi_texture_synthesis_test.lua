@@ -12,7 +12,7 @@ local cmd = torch.CmdLine()
 
 --60-texture noise_dim = 2
 cmd:option('-noise_dim', 2)
-cmd:option('-pretrain_model', 'data/train_out/60_textures/model_texture60.t7')
+cmd:option('-pretrain_model', 'data/train_out/model_texture60.t7')
 cmd:option('-gpu', 0, 'Zero indexed gpu number.')
 cmd:option('-save_path', 'data/test_out/')
 
