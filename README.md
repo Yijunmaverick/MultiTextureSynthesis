@@ -36,7 +36,7 @@ th multi_texture_synthesis_train.lua
 
 ### Testing
 
-We release a 60-texture synthesis [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeS0FncWpzTUNoblk) that synthesize the provided 60 textures (ind_texture =1,2,...,60) in data/texture60/ folder.
+We release a 60-texture synthesis [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeS0FncWpzTUNoblk) that synthesize the provided 60-texture set (ind_texture =1,2,...,60) in data/texture60/ folder.
 
 ```
 th multi_texture_synthesis_test.lua -ind_texture 24
@@ -49,20 +49,20 @@ We incorporate our idea of introducing a selection unit to handle the transferri
 the selection unit, we generate a corresponding noise map (e.g., from the uniform distribution) and concatenate these
 maps with the encoded features from the content, which are then decoded to the transferred result.
 
-## Training
-- Follow the [DCGAN](https://github.com/soumith/dcgan.torch) to prepare the data (CelebA). The only differece is that the face we cropped is of size 128x128. Please modify Line 10 in their [crop_celebA.lua](https://github.com/soumith/dcgan.torch/blob/master/data/crop_celebA.lua) file. We use the standard train&test split of the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
+Collect your style image set (e.g., data/style1000/) before the training.
 
-- Modify the training data path in ./matlab/FaceCompletion_training/GFC_caffeinit.m file.
+```
+th multi_style_transfer_train.lua.
+```
 
-- Download our face parsing model [Model_parsing](https://drive.google.com/open?id=0B8_MZ8a8aoSeaXlUR296TzM2NW8) and put it under ./matlab/FaceCompletion_training/model/ folder.
+### Testing
 
-- We provide an initial [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeWWtldlhXSjdydVk) that is only trained with the reconstruction loss, as a good start point for the subsequent GAN training. Please download it and put it under ./matlab/FaceCompletion_training/model/ folder.
+We release a 1000-style transfer [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeZnRESGg5Z0RpVzQ) that synthesize the provided 1000-style [set](https://drive.google.com/open?id=0B8_MZ8a8aoSeajRLcEtIUjBjR3c) (ind_texture =1,2,...,1000).
 
-- Run ./matlab/FaceCompletion_training/demo_GFC_training.m for training.
+```
+th multi_style_transfer_test.lua 
+```
 
-## Testing
-- Download our face completion model [Model_G](https://drive.google.com/open?id=0B8_MZ8a8aoSeQlNwY2pkRkVIVmM) and put it under ./matlab/FaceCompletion_testing/model/ folder. 
-- Run ./matlab/FaceCompletion_testing/demo_face128.m for completion. TestImages are from the CelebA test dataset.
 
 ## Citation
 ```
