@@ -26,6 +26,23 @@ th single_texture_diverse_synthesis_test.lua
 
 ## Task 2: Multi-texture synthesis
 
+### Training
+
+Collect your texture image set (e.g., data/texture60/) before the training.
+
+```
+th multi_texture_synthesis_train.lua
+```
+
+### Testing
+
+We release a 60-texture synthesis [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeS0FncWpzTUNoblk) that synthesize the provided 60 textures (ind_texture =1,2,...,60) in data/texture60/ folder.
+
+```
+th multi_texture_synthesis_test.lua -ind_texture 24
+```
+
+
 ## Task 3: Multi-style transfer
 
 We incorporate our idea of introducing a selection unit to handle the transferring of different styles. For each bit in
