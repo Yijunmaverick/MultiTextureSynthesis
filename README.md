@@ -13,9 +13,9 @@ We first realize the diverse synthesis on single-texture synthesis. Given one te
 
 # Training
 
-'''
-th sin.lua
-'''
+```
+th single_texture_diverse_synthesis_train.lua -texture YourTextureExample.jpg -image_size 256 -diversity_weight -1.0
+```
 
 # Testing
 
