@@ -51,13 +51,15 @@ maps with the encoded features from the content, which are then decoded to the t
 
 Collect your style image set (e.g., data/style1000/) before the training.
 
+### Training
+
 ```
 th multi_style_transfer_train.lua.
 ```
 
 ### Testing
 
-We release a 1000-style transfer [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeZnRESGg5Z0RpVzQ) that synthesize the provided 1000-style [set](https://drive.google.com/open?id=0B8_MZ8a8aoSeajRLcEtIUjBjR3c) (ind_texture =1,2,...,1000).
+We release a 1000-style transfer [model](https://drive.google.com/open?id=0B8_MZ8a8aoSeZnRESGg5Z0RpVzQ) that transfer this 1000-style [set](https://drive.google.com/open?id=0B8_MZ8a8aoSeajRLcEtIUjBjR3c) (ind_texture =1,2,...,1000).
 
 ```
 th multi_style_transfer_test.lua 
