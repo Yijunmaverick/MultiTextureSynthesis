@@ -23,6 +23,7 @@ th single_texture_diverse_synthesis_train.lua -texture YourTextureExample.jpg -i
 ```
 th single_texture_diverse_synthesis_test.lua 
 ```
+After obtaining all diverse results, run gif.m (data/test_out/) in Matlab to convert them to an .avi video for view.
 
 ## Task 2: Multi-texture synthesis
 
