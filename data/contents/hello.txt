@@ -1,1 +1,1 @@
-hello
+YourContentImages (train & test) folder here
