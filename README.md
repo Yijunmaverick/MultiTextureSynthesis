@@ -7,7 +7,7 @@ Torch implementation of our CVPR17 [paper](https://arxiv.org/abs/1703.01664) on 
 - NVIDIA GPU + CUDA CuDNN
 - Torch 
 
-## Single texture diverse synthesis
+## Diverse synthesis
 
 ## Multi-texture synthesis
 
