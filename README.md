@@ -7,11 +7,15 @@ Torch implementation of our CVPR17 [paper](https://arxiv.org/abs/1703.01664) on 
 - NVIDIA GPU + CUDA CuDNN
 - Torch 
 
-## Diverse synthesis
+## Task 1: Diverse synthesis
 
-## Multi-texture synthesis
+## Task 2: Multi-texture synthesis
 
-## Multi-style transfer
+## Task 3: Multi-style transfer
+
+We incorporate our idea of introducing a selection unit to handle the transferring of different styles. For each bit in
+the selection unit, we generate a corresponding noise map (e.g., from the uniform distribution) and concatenate these
+maps with the encoded features from the content, which are then decoded to the transferred result.
 
 ## Training
 - Follow the [DCGAN](https://github.com/soumith/dcgan.torch) to prepare the data (CelebA). The only differece is that the face we cropped is of size 128x128. Please modify Line 10 in their [crop_celebA.lua](https://github.com/soumith/dcgan.torch/blob/master/data/crop_celebA.lua) file. We use the standard train&test split of the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
