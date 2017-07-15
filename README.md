@@ -86,5 +86,4 @@ th multi_style_transfer_test.lua
 ```
 
 ## Acknowledgement
-- This work was performed during a summer internship at [Adobe Research](https://research.adobe.com/).
 - Codes are heavily borrowed from popular implementations of several great work, including [NeuralArt](https://github.com/jcjohnson/neural-style), [TextureNet](https://github.com/DmitryUlyanov/texture_nets), and [FastNeuralArt](https://github.com/jcjohnson/fast-neural-style).
