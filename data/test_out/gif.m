@@ -1,4 +1,4 @@
-outputVideo = VideoWriter('002937.avi');
+outputVideo = VideoWriter('XXX.avi');
 outputVideo.FrameRate =24;
 open(outputVideo)
   
