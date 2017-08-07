@@ -100,14 +100,9 @@ function get_input_train(train_hdf5, image_names, id)
 
   -- Allocate reusable space
   local img_batch = torch.Tensor(params.batch_size, 3, params.image_size, params.image_size)
-    
-    --[[local id = torch.rand(1)
-
-    id =  id[1]
-    id = torch.floor((#image_names-1) * id+1)]]--
-
-    local name = image_names[id]
-    img_batch[1] = train_hdf5:read(image_names[id] ..  '_image' ):all()
+   
+  local name = image_names[id]
+  img_batch[1] = train_hdf5:read(image_names[id] ..  '_image' ):all()
 
   return img_batch, name
 end
