@@ -96,9 +96,6 @@ train_content_hdf5 = hdf5.open(params.train_content_hdf5, 'r')
 train_texture_hdf5 = hdf5.open(params.train_texture_hdf5, 'r')
 
 function get_input_train(train_hdf5, image_names, id)
-
-
-  -- Allocate reusable space
   local img_batch = torch.Tensor(params.batch_size, 3, params.image_size, params.image_size)
    
   local name = image_names[id]
