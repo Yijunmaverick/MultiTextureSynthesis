@@ -190,7 +190,7 @@ function feval(x)
   --after 1000 iterations, add a new style
   if iteration%1000 == 0 then
      if num_t<params.style_num then 
-		  num_t = num_t +1
+	num_t = num_t +1
      end
   end
 
