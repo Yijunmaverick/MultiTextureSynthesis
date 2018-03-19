@@ -1,5 +1,5 @@
 # [MultiTextureSynthesis](https://sites.google.com/site/yijunlimaverick/texturesynthesis)
-Torch implementation of our CVPR17 [paper](https://drive.google.com/open?id=1tPYy-cY3-ij3ch3V4LFvv24YoXrmOuTH) on multi-texture synthesis. For academic use only.
+Torch implementation of our CVPR17 [paper](https://drive.google.com/open?id=1tPYy-cY3-ij3ch3V4LFvv24YoXrmOuTH) on multi-texture synthesis.
 
 ## Prerequisites
 
