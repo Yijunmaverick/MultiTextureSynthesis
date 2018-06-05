@@ -37,7 +37,7 @@ cmd:option('-tmp_path', 'data/train_out/60_textures/', 'path to store training r
 cmd:option('-model_name', 'Model_multi_texture_synthesis')
 
 cmd:option('-normalize_gradients', 'true')
-cmd:option('-normalization', 'instance', 'batch|instance')
+cmd:option('-normalization', 'batch', 'batch|instance')
 cmd:option('-loss_type', 'L1', 'L1|L2');
 cmd:option('-backend', 'cudnn', 'nn|cudnn')
 
